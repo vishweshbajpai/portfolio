@@ -18,12 +18,9 @@ textarea {
 .scroll-button-wrapper {
   border-radius: 50%;
   background-color: var(--bs-body-color);
-  color: white;
-  position: absolute;
   right: 2rem;
   bottom: 3rem;
-  font-size: 3rem;
-  padding: 0.5rem 2rem;
+  padding: 1rem 1rem;
   cursor: pointer;
   display: none;
   position: fixed;
@@ -139,9 +136,32 @@ textarea {
   box-shadow: var(--callForAction) 1px 1px 5px 0.1px;
 }
 
+.companies-wrapper {
+  padding: 4% 8% 0 8%;
+  background-color: ghostwhite;
+}
+
+.companies-wrapper h2 {
+  text-align: center;
+  font-weight: 500 !important;
+  margin-bottom: 5%;
+}
+
+.companies-logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.companies-logo-wrapper > img {
+  width: 15rem;
+  height: 8rem;
+  object-fit: contain;
+}
+
 .carousel {
   background-color: ghostwhite;
-  padding: 3rem 0;
+  padding: 0 0 3% 0;
 }
 
 .carousel-inner {
@@ -246,6 +266,17 @@ textarea {
   box-shadow: var(--callForAction) 1px 1px 5px 0.1px;
 }
 
+.toast {
+  padding: 2rem 2.5rem !important;
+  font-size: 1.4rem !important;
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .header-image {
+    padding-top: 2rem;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .header-left {
     display: flex;
@@ -261,6 +292,12 @@ textarea {
   }
   .heading-subtext {
     font-size: 2rem;
+  }
+  .companies-wrapper {
+    padding: 8% 8% 0 8%;
+  }
+  .companies-logo-wrapper > img {
+    width: 13rem;
   }
   .footer-wrapper,
   .services-wrapper,

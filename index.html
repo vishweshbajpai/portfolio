@@ -16,64 +16,121 @@
     />
     <!-- CSS Ends -->
   </head>
+
   <body>
     <!-- Scroll Top Button -->
-    <div id="scrollButton" class="scroll-button-wrapper" onclick="scrollClickHandler()">&#8593</div>
+    <div
+      id="scrollButton"
+      class="scroll-button-wrapper"
+      onclick="scrollClickHandler()"
+    >
+      <img src="./assets/icons/ArrowUpIcon.svg" />
+    </div>
     <!-- Scroll Top Button Ends-->
 
     <!-- Header -->
     <div id="header" class="header-wrapper">
       <div class="container">
-      <div class="row header-row">
-        <div class="col-lg-6 header-left">
-          <p class="display-1 heading-text">Vishwesh Bajpai</p>
-          <p class="heading-subtext">Full Stack Web Developer</p>
-          <a href="#footer"><button class="btn btn-primary header-button">Hire Me!</button></a>
-        </div>
-        <div class="col-lg-6 header-right">
-          <img src="./assets/images/HeaderImage2.svg" class="header-image"/>
+        <div class="row header-row">
+          <div class="col-lg-6 header-left">
+            <p class="display-1 heading-text">Vishwesh Bajpai</p>
+            <p class="heading-subtext">Full Stack Web Developer</p>
+            <a href="#footer"
+              ><button class="btn btn-primary header-button">
+                Hire Me!
+              </button></a
+            >
+          </div>
+          <div class="col-lg-6 header-right">
+            <img src="./assets/images/HeaderImage2.svg" class="header-image" />
+          </div>
         </div>
       </div>
-    </div>
     </div>
     <!-- Header Ends -->
 
     <!-- Services -->
     <div class="services-wrapper">
-    <div class="container">
-      <h2 class="display-1">What can I do for you?</h2>
-      <div class="row gy-5">
-        <div class="col-lg-4 col-sm-6 column-center">
-          <img src="./assets/images/UnDraw_UIUXImg.svg" class="services-image uiux-image" />
-          <p>UI/UX</p>
+      <div class="container">
+        <h2 class="display-1">What can I do for you?</h2>
+        <div class="row gy-5">
+          <div class="col-lg-4 col-sm-6 column-center">
+            <img
+              src="./assets/images/UnDraw_UIUXImg.svg"
+              class="services-image uiux-image"
+            />
+            <p>UI/UX</p>
+          </div>
+          <div class="col-lg-4 col-sm-6 column-center">
+            <img
+              src="./assets/images/UnDraw_WebDevImg.svg"
+              class="services-image website-image"
+            />
+            <p>Website</p>
+          </div>
+          <div class="col-lg-4 col-sm-6 column-center">
+            <img
+              src="./assets/images/UnDraw_SPAImg.svg"
+              class="services-image spa-image"
+            />
+            <p>SPA</p>
+          </div>
+          <div class="col-lg-4 col-sm-6 column-center">
+            <img
+              src="./assets/images/UnDraw_AndroidImg.svg"
+              class="services-image"
+            />
+            <p>Mobile</p>
+          </div>
+          <div class="col-lg-4 col-sm-6 column-center">
+            <img
+              src="./assets/images/UnDraw_CloudImg.svg"
+              class="services-image cloud-image"
+            />
+            <p>Cloud</p>
+          </div>
+          <div class="col-lg-4 col-sm-6 column-center">
+            <img
+              src="./assets/images/UnDraw_BigDataImg.svg"
+              class="services-image"
+            />
+            <p>Big Data</p>
+          </div>
         </div>
-        <div class="col-lg-4 col-sm-6 column-center">
-          <img src="./assets/images/UnDraw_WebDevImg.svg" class="services-image website-image" />
-          <p>Website</p>
+        <div class="services-button-wrapper">
+          <a href="#footer"
+            ><button class="btn btn-primary services-button">
+              Get Quote
+            </button></a
+          >
         </div>
-        <div class="col-lg-4 col-sm-6 column-center">
-          <img src="./assets/images/UnDraw_SPAImg.svg" class="services-image spa-image" />
-          <p>SPA</p>
-        </div>
-        <div class="col-lg-4 col-sm-6 column-center">
-          <img src="./assets/images/UnDraw_AndroidImg.svg" class="services-image" />
-          <p>Mobile</p>
-        </div>
-        <div class="col-lg-4 col-sm-6 column-center">
-          <img src="./assets/images/UnDraw_CloudImg.svg" class="services-image cloud-image" />
-          <p>Cloud</p>
-        </div>
-        <div class="col-lg-4 col-sm-6 column-center">
-          <img src="./assets/images/UnDraw_BigDataImg.svg" class="services-image" />
-          <p>Big Data</p>
-        </div>
-      </div>
-      <div class="services-button-wrapper">
-        <a href="#footer"><button class="btn btn-primary services-button">Get Quote</button></a>
       </div>
     </div>
-  </div>
     <!-- Services Ends -->
+
+    <!-- Companies -->
+    <div class="companies-wrapper">
+      <div class="container">
+        <h2 class="display-1">Companies I have worked with</h2>
+        <hr style="margin: 0 0 1rem 0" />
+        <div class="row">
+          <div class="col-lg-3 col-sm-6 col-6 companies-logo-wrapper">
+            <img src="./assets/images/PractoImg.png" />
+          </div>
+          <div class="col-lg-3 col-sm-6 col-6 companies-logo-wrapper">
+            <img src="./assets/images/AmazonPayImg.png" />
+          </div>
+          <div class="col-lg-3 col-sm-6 col-6 companies-logo-wrapper">
+            <img src="./assets/images/ByjusImg.png" />
+          </div>
+          <div class="col-lg-3 col-sm-6 col-6 companies-logo-wrapper">
+            <img src="./assets/images/LeadSquaredImg.png" />
+          </div>
+        </div>
+        <hr style="margin: 1rem 0 0 0" />
+      </div>
+    </div>
+    <!-- Companies Ends-->
 
     <!-- Carousel -->
     <div
@@ -84,7 +141,11 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="slide-item">
-            <img src="./assets/icons/QuoteIcon.svg" alt="Quotes" class="quote-icon"/>
+            <img
+              src="./assets/icons/QuoteIcon.svg"
+              alt="Quotes"
+              class="quote-icon"
+            />
             <p>
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Curabitur ullamcorper, massa at placerat sollicitudin, arcu justo
@@ -104,7 +165,11 @@
         </div>
         <div class="carousel-item">
           <div class="slide-item">
-            <img src="./assets/icons/QuoteIcon.svg" alt="Quotes" class="quote-icon"/>
+            <img
+              src="./assets/icons/QuoteIcon.svg"
+              alt="Quotes"
+              class="quote-icon"
+            />
             <p>
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Curabitur ullamcorper, massa at placerat sollicitudin, arcu justo
@@ -118,7 +183,11 @@
         </div>
         <div class="carousel-item">
           <div class="slide-item">
-            <img src="./assets/icons/QuoteIcon.svg" alt="Quotes" class="quote-icon"/>
+            <img
+              src="./assets/icons/QuoteIcon.svg"
+              alt="Quotes"
+              class="quote-icon"
+            />
             <p>
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Curabitur ullamcorper, massa at placerat sollicitudin, arcu justo
@@ -157,47 +226,91 @@
 
     <!-- Footer -->
     <div id="footer" class="footer-wrapper">
-    <div class="container">
-      <div class="row">
-        
-        <div class="col-lg-6 footer-left">
-          <h2 class="display-1 footer-heading">Let's connect</h2>
-          <input
-            type="text"
-            class="form-control footer-input"
-            placeholder="Name"
-            required
-          />
-          <input
-            type="email"
-            class="form-control footer-input"
-            placeholder="Email"
-            required
-          />
-          <input
-            type="tel"
-            class="form-control footer-input"
-            placeholder="Phone"
-            required
-          />
-          <textarea
-            class="form-control footer-input"
-            rows="5"
-            placeholder="Description..."
-          ></textarea>
-          <button class="footer-button btn btn-primary">Send</button>
-        </div>
-        <div class="col-lg-6 footer-right">
-          <img
-            src="./assets/images/UnDraw_ConnectImg.svg"
-            alt="connect"
-            class="footer-connect-image"
-          />
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 footer-left">
+            <h2 class="display-1 footer-heading">Let's connect</h2>
+            <form
+              id="footerForm"
+              onsubmit="footerFormSubmitHandler()"
+              novalidate
+            >
+              <input
+                id="name"
+                type="text"
+                class="form-control footer-input"
+                placeholder="Name"
+                required
+              />
+              <div class="invalid-feedback">
+                Please enter a name.
+              </div>
+              <input
+                id="email"
+                type="email"
+                class="form-control footer-input"
+                placeholder="Email"
+                required
+              />
+              <div class="invalid-feedback">
+                Please enter a valid email.
+              </div>
+              <input
+                id="phone"
+                type="tel"
+                minlength="10"
+                class="form-control footer-input"
+                placeholder="Phone"
+                required
+              />
+              <div class="invalid-feedback">
+                Please enter a valid number.
+              </div>
+              <textarea
+                id="description"
+                class="form-control footer-input"
+                rows="5"
+                placeholder="Description..."
+                required
+              ></textarea>
+              <button type="submit" class="footer-button btn btn-primary">
+                Send
+              </button>
+            </form>
+          </div>
+          <div class="col-lg-6 footer-right">
+            <img
+              src="./assets/images/UnDraw_ConnectImg.svg"
+              alt="connect"
+              class="footer-connect-image"
+            />
+          </div>
         </div>
       </div>
     </div>
-  </div>
     <!-- Footer Ends -->
+
+    <!-- Custom Toast -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div
+      id="liveToast"
+      class="toast align-items-center"
+      role="alert"
+      aria-live="assertive"
+      aria-atomic="true"
+    >
+      <div class="d-flex">
+        <div class="toast-body">Sent successfully! :)</div>
+        <button
+          type="button"
+          class="btn-close me-2 m-auto"
+          data-bs-dismiss="toast"
+          aria-label="Close"
+        ></button>
+      </div>
+    </div>
+  </div>
+    <!-- Custom Toast Ends -->
 
     <!-- JavaScript Bundle -->
     <script src="./js/index.js" defer></script>

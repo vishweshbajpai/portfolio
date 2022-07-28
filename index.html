@@ -42,7 +42,7 @@
             >
           </div>
           <div class="col-lg-6 header-right">
-            <img src="./assets/images/HeaderImage2.svg" class="header-image" />
+            <img src="./assets/images/HeaderImg.svg" class="header-image" />
           </div>
         </div>
       </div>
@@ -111,7 +111,7 @@
     <!-- Companies -->
     <div class="companies-wrapper">
       <div class="container">
-        <h2 class="display-1">Companies I have worked with</h2>
+        <h2 class="display-1">Companies I have worked for</h2>
         <hr style="margin: 0 0 1rem 0" />
         <div class="row">
           <div class="col-lg-3 col-sm-6 col-6 companies-logo-wrapper">
@@ -240,38 +240,34 @@
                 type="text"
                 class="form-control footer-input"
                 placeholder="Name"
+                oninput="nameInputHandler()"
                 required
               />
-              <div class="invalid-feedback">
-                Please enter a name.
-              </div>
+              <div id="nameError" class="error-message"></div>
               <input
                 id="email"
                 type="email"
                 class="form-control footer-input"
                 placeholder="Email"
+                oninput="emailInputHandler()"
                 required
               />
-              <div class="invalid-feedback">
-                Please enter a valid email.
-              </div>
+              <div id="emailError" class="error-message"></div>
               <input
                 id="phone"
                 type="tel"
-                minlength="10"
+                minlength="15"
                 class="form-control footer-input"
                 placeholder="Phone"
+                oninput="phoneInputHandler()"
                 required
               />
-              <div class="invalid-feedback">
-                Please enter a valid number.
-              </div>
+              <div id="phoneError" class="error-message"></div>
               <textarea
                 id="description"
                 class="form-control footer-input"
                 rows="5"
                 placeholder="Description..."
-                required
               ></textarea>
               <button type="submit" class="footer-button btn btn-primary">
                 Send
@@ -292,24 +288,24 @@
 
     <!-- Custom Toast -->
     <div class="toast-container position-fixed bottom-0 end-0 p-3">
-    <div
-      id="liveToast"
-      class="toast align-items-center"
-      role="alert"
-      aria-live="assertive"
-      aria-atomic="true"
-    >
-      <div class="d-flex">
-        <div class="toast-body">Sent successfully! :)</div>
-        <button
-          type="button"
-          class="btn-close me-2 m-auto"
-          data-bs-dismiss="toast"
-          aria-label="Close"
-        ></button>
+      <div
+        id="liveToast"
+        class="toast align-items-center"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="d-flex">
+          <div class="toast-body">Sent successfully! :)</div>
+          <button
+            type="button"
+            class="btn-close me-2 m-auto"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
       </div>
     </div>
-  </div>
     <!-- Custom Toast Ends -->
 
     <!-- JavaScript Bundle -->
@@ -320,5 +316,6 @@
       crossorigin="anonymous"
       defer
     ></script>
+    <!-- Javascript Bundle Ends -->
   </body>
 </html>
